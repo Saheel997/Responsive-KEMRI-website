@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Contact</title>
         <!--Make the website responsive or respond to different screen sizes-->
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
@@ -32,50 +32,47 @@
 
     </head>
     <body>
-        
         <h1 id="logo"><a href="index.html"><img src="logo.jpg" class="logo" alt="logo" /> KENYA MEDICAL RESEARCH INSTITUTE</a></h1>
-
+        
         <!--Hyperlinks to jump us to different pages-->
-    
         <div class="TopNav" id="myTopNav">
-            <a href="#">HOME</a>
+
+            <a href="index.html">HOME</a>
             <a href="ABOUT.html">ABOUT</a>
             <a href="COVID-19.html">COVID-19</a>
-            <a href="CONTACT.html">CONTACT</a>
+            <a href="#">CONTACT</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
     
             </div>
-            
-            <h2>Home Page</h2>
-            <!--Add image here-->
-            <img src="kemrihome.jpg" border="2px" alt="Landscape"/>   
+            <h2>Contact Page</h2>
+            <p>Kenya Medical Research Institute (KEMRI) is a State Corporation established through the <br>
+            Science and Technology (Amendment) Act of 1979, which has since been amended to Science, Technology and Innovation Act 2013. </p>
 
-            <h3>About Us</h3>
-            <img src="home1.jpg" alt="home1" style="float: right;width:20%;height:20%;">
-            
-            The Kenya Medical Research Institute (KEMRI) is a state corporation <br>
-            that was established in 1979 through the Science and Technology Amendment.
+            <p>The 1979 Act established KEMRI as a National body responsible for carrying out health research in Kenya </p>
 
-            <p>Over 40 years of growth has led to KEMRI becoming a regional leader in human
-                health research.</p>
+            <p>E-mail: Director@kemri.org</p>
+            <p>Call us: +254 722205901 </p>
 
-            KEMRI is the national body that is responsible for carrying out health research
-            in Kenya. <br>
 
-            <p><button onclick="window.location.href='ABOUT.html';">
-            READ MORE</button></p>
-            <!--Add button here-->
+            <form action="index.html" method="POST">
 
-            <h3>COVID-19</h3>
-            <img src="virus.jpg" alt="home1" style="float: left;width:20%;height:20%;">
-            <p>The COVID-19 virus has become a great threat to our country therefore, <br>
-            we must make sure that we are ready to take care of each other and our close ones.</p>
+                <input type="text" size="30" name="fname" required placeholder="Name"/>
+         
+                <input type="text" size="30" name="lname" required placeholder="E-mail Address"/> <br>
 
-            Click on the button below to read more about the virus and the preventive measures and symptoms.
-            <p><button onclick="window.location.href='COVID-19.html';">
-            READ MORE</button></p>
+                <textarea cols="50" rows="10">
+                    Type your message here      
+                </textarea>
+
+                <p></p>
+
+       <input type="submit" value="Submit" name="submit"/>
+
+       <input type="reset" value="Cancel" name="reset"/>
+
+       </form>
 
     </body>
 </html>
